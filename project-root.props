@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!-- -*- coding: utf-8-with-signature -*- -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="ProjectRoot">
+    <ProjectRootDirectory>$(MSBuildThisFileDirectory)</ProjectRootDirectory>
+	<PropertiesDirectory>$(ProjectRootDirectory)/external/properties</PropertiesDirectory>
+  </PropertyGroup>
+</Project>

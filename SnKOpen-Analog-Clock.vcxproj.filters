@@ -18,10 +18,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SystemTray.cpp">
+    <ClCompile Include="external/source/SystemTray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utility.cpp">
+    <ClCompile Include="external/source/Utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="About.cpp">
@@ -42,13 +42,13 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DirectAnnotation.cpp">
+    <ClCompile Include="external/source/DirectAnnotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OleAccGUIDs.cpp">
+    <ClCompile Include="external/source/OleAccGUIDs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UIAutomationGUIDs.cpp">
+    <ClCompile Include="external/source/UIAutomationGUIDs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,16 +56,16 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SystemTray.h">
+    <ClInclude Include="external/include/SystemTray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.h">
+    <ClInclude Include="external/include/Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VersionInfoCommon.h">
+    <ClInclude Include="external/include/VersionInfoCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="About.h">
@@ -89,7 +89,7 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DirectAnnotation.h">
+    <ClInclude Include="external/include/DirectAnnotation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

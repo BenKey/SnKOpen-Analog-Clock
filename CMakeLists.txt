@@ -15,7 +15,7 @@ include("${CMAKE_SOURCE_DIR}/cmake/include/icu.cmake")
 
 include_directories("${CMAKE_SOURCE_DIR}")
 
-file(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/*.rc")
+file(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/*.h" "${CMAKE_CURRENT_SOURCE_DIR}/external/source/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/external/include/*.h" "${CMAKE_CURRENT_SOURCE_DIR}/*.rc")
 add_executable(${PROJECT_NAME} WIN32 ${SOURCE_FILES})
 if(${CMAKE_CXX_COMPILER_ID} MATCHES "Clang|GNU")
   target_compile_options(${PROJECT_NAME} PRIVATE -municode -mwindows)

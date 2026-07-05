@@ -23,7 +23,8 @@
     <ProjectName>SnKOpen-Analog-Clock</ProjectName>
     <SolutionDir Condition="'$(BuildingInsideVisualStudio)'!='true'">$(MSBuildThisFileDirectory)\</SolutionDir>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Globals.props))" />
+  <Import Project="$([MSBuild]::GetPathOfFileAbove(project-root.props))" />
+  <Import Project="$(PropertiesDirectory)/Globals.props" />
   <PropertyGroup Label="Globals">
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{a35e8bc7-e7af-4358-a332-b4f7afe7a0a7}</ProjectGuid>
@@ -37,7 +38,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(yekneb.props))" />
+    <Import Project="$(PropertiesDirectory)/yekneb.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -79,30 +80,30 @@
   <ItemGroup>
     <ClCompile Include="About.cpp" />
     <ClCompile Include="App.cpp" />
-    <ClCompile Include="DirectAnnotation.cpp" />
+    <ClCompile Include="external/source/DirectAnnotation.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="OleAccGUIDs.cpp" />
+    <ClCompile Include="external/source/OleAccGUIDs.cpp" />
     <ClCompile Include="Options.cpp" />
     <ClCompile Include="OptionsDialog.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="SystemTray.cpp" />
-    <ClCompile Include="UIAutomationGUIDs.cpp" />
-    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="external/source/SystemTray.cpp" />
+    <ClCompile Include="external/source/UIAutomationGUIDs.cpp" />
+    <ClCompile Include="external/source/Utility.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="About.h" />
     <ClInclude Include="App.h" />
-    <ClInclude Include="DirectAnnotation.h" />
+    <ClInclude Include="external/include/DirectAnnotation.h" />
     <ClInclude Include="Options.h" />
     <ClInclude Include="OptionsDialog.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="external/include/SystemTray.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="Utility.h" />
+    <ClInclude Include="external/include/Utility.h" />
     <ClInclude Include="VersionInfo.h" />
-    <ClInclude Include="VersionInfoCommon.h" />
+    <ClInclude Include="external/include/VersionInfoCommon.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
