@@ -1,0 +1,12 @@
+[submodule "external/properties"]
+	path = external/properties
+	url = https://github.com/BenKey/shared-MSBuild-properties-files.git
+[submodule "external/resources"]
+	path = external/resources
+	url = https://github.com/BenKey/shared-Windows-Resource-Script-files.git
+[submodule "external/source"]
+	path = external/source
+	url = https://github.com/BenKey/shared-Windows-API-source-files.git
+[submodule "external/include"]
+	path = external/include
+	url = https://github.com/BenKey/shared-Windows-API-header-files.git
