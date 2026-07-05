@@ -21,7 +21,6 @@
   <PropertyGroup Label="InitialProjectSettings">
     <ConfigurationType>Application</ConfigurationType>
     <ProjectName>SnKOpen-Analog-Clock</ProjectName>
-    <SolutionDir Condition="'$(BuildingInsideVisualStudio)'!='true'">$(MSBuildThisFileDirectory)\</SolutionDir>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(project-root.props))" />
   <Import Project="$(PropertiesDirectory)/Globals.props" />

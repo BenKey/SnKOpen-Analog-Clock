@@ -1,3 +1,9 @@
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/BenKey/shared-CMake-build-files.git
+[submodule "external/include"]
+	path = external/include
+	url = https://github.com/BenKey/shared-Windows-API-header-files.git
 [submodule "external/properties"]
 	path = external/properties
 	url = https://github.com/BenKey/shared-MSBuild-properties-files.git
@@ -7,9 +13,4 @@
 [submodule "external/source"]
 	path = external/source
 	url = https://github.com/BenKey/shared-Windows-API-source-files.git
-[submodule "external/include"]
-	path = external/include
-	url = https://github.com/BenKey/shared-Windows-API-header-files.git
-[submodule "cmake"]
-	path = cmake
-	url = https://github.com/BenKey/shared-CMake-build-files.git
+
