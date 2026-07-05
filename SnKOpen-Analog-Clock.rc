@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#  include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "winres.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "VersionInfo.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#  include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""winres.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""VersionInfo.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""res/SnKOpen-Analog-Clock.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 301, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SnKOpen Analog Clock"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_APP,IDC_STATIC,10,10,20,20
+    LTEXT           "SnKOpen Analog Clock, Version 1.0.",IDC_APP_AND_VERSION_STATIC,42,10,246,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2023, Benilda Key. All rights reserved.",IDC_COPYRIGHT_INFO_STATIC,42,26,246,8
+    LTEXT           "SnKOpen Analog Clock, based on the Clock program from the book Programming Windows by Charles Petzold.",IDC_DESCRIPTION_STATIC,10,42,278,18
+    CONTROL         "Source: <a href=""https://github.com/BenKey/SnKOpen-Analog-Clock"">SnKOpen Analog Clock</a>",IDC_SOURCE_SYSLINK,"SysLink",WS_TABSTOP,10,67,280,8
+    CONTROL         "License: <a href=""https://opensource.org/licenses/BSD-2-Clause"">The BSD 2-Clause License</a>",IDC_LICENSE_SYSLINK,"SysLink",WS_TABSTOP,10,84,280,8
+    DEFPUSHBUTTON   "OK",IDOK,125,103,50,14,WS_GROUP
+END
+
+IDD_OPTIONS_DIALOG_BOX DIALOGEX 0, 0, 201, 88
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SnKOpen Analog Clock Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Choose Background Color...",IDC_CHOOSE_BACKGROUND_COLOR_BUTTON,10,10,146,20
+    LTEXT           "",IDC_CURRENT_BACKGROUND_COLOR_STATIC,164,10,20,20,WS_BORDER | NOT WS_GROUP,WS_EX_STATICEDGE
+    PUSHBUTTON      "Choose Clock Color...",IDC_CHOOSE_CLOCK_COLOR_BUTTON,10,34,146,20
+    LTEXT           "",IDC_CURRENT_CLOCK_COLOR_STATIC,164,34,20,20,WS_BORDER | NOT WS_GROUP,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,42,62,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,62,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_OPTIONS_DIALOG_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP                      ICON                          "res/SnKOpen-Analog-Clock.ico"
+IDI_SMALL                    ICON                          "res/Small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_APP MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Use &Default",                IDM_OPTIONS_USE_DEFAULT
+        MENUITEM "&Edit Options...",            IDM_OPTIONS_EDIT_OPTIONS
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_APP_ACCELERATORS ACCELERATORS
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+END
+
+IDR_ABOUT_DIALOG_ACCELERATORS ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTIONS_DIALOG_BOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDC_APP                                      "SnKOpenAnalogClock"
+    IDS_APP_TITLE                                "SnKOpen Analog Clock"
+    IDS_ERROR                                    "Error!"
+    IDS_COMMON_CONTROLS_INIT_FAILED              "Common Controls initialization failed."
+    IDS_OLE_INIT_FAILED                          "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_APP_AND_VERSION_FORMAT                   "%s, Version %s."
+    IDS_ABOUT_MENU_ITEM                          "&About..."
+    IDS_EDIT_OPTIONS_MENU_ITEM                   "&Edit Options..."
+    IDS_EXIT_MENU_ITEM                           "E&xit"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res/SnKOpen-Analog-Clock.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

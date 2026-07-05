@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="InitialProjectSettings">
+    <ConfigurationType>Application</ConfigurationType>
+    <ProjectName>SnKOpen-Analog-Clock</ProjectName>
+    <SolutionDir Condition="'$(BuildingInsideVisualStudio)'!='true'">$(MSBuildThisFileDirectory)\</SolutionDir>
+  </PropertyGroup>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove(Globals.props))" />
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a35e8bc7-e7af-4358-a332-b4f7afe7a0a7}</ProjectGuid>
+    <RootNamespace>$(ProjectName)</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$([MSBuild]::GetPathOfFileAbove(yekneb.props))" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;Oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;Oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;Oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;Oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="About.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="DirectAnnotation.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="OleAccGUIDs.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="OptionsDialog.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SystemTray.cpp" />
+    <ClCompile Include="UIAutomationGUIDs.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="About.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="DirectAnnotation.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VersionInfo.h" />
+    <ClInclude Include="VersionInfoCommon.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SnKOpen-Analog-Clock.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\SnKOpen-Analog-Clock.ico" />
+    <Image Include="res\Small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SnKOpen-Analog-Clock.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <FileToSign Include="$(OutDir)$(TargetName)$(TargetExt)" />
+    </ItemGroup>
+    <SignFile Condition="'$(EnableCodeSigning)'=='true'" CertificateThumbprint="$(CertificateThumbprint)" SigningTarget="@(FileToSign)" TargetFrameworkVersion="v4.5" TimestampUrl="$(SignToolTimestampServer)" />
+  </Target>
+</Project>
