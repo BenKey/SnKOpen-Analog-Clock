@@ -4,6 +4,9 @@
 [submodule "external/include"]
 	path = external/include
 	url = https://github.com/BenKey/shared-Windows-API-header-files.git
+[submodule "external/include-cross-platform"]
+	path = external/include-cross-platform
+	url = https://github.com/BenKey/shared-cross-platform-header-files.git
 [submodule "external/properties"]
 	path = external/properties
 	url = https://github.com/BenKey/shared-MSBuild-properties-files.git
@@ -13,4 +16,3 @@
 [submodule "external/source"]
 	path = external/source
 	url = https://github.com/BenKey/shared-Windows-API-source-files.git
-

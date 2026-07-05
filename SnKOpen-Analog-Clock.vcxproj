@@ -102,7 +102,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="external/include/Utility.h" />
     <ClInclude Include="VersionInfo.h" />
-    <ClInclude Include="external/include/VersionInfoCommon.h" />
+    <ClInclude Include="external/include-cross-platform/VersionInfoCommon.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>

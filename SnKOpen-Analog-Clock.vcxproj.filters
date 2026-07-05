@@ -65,7 +65,7 @@
     <ClInclude Include="external/include/Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="external/include/VersionInfoCommon.h">
+    <ClInclude Include="external/include-cross-platform/VersionInfoCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="About.h">
