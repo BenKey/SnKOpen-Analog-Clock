@@ -68,7 +68,7 @@ FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDI_APP,IDC_STATIC,10,10,20,20
     LTEXT           "SnKOpen Analog Clock, Version 1.0.",IDC_APP_AND_VERSION_STATIC,42,10,246,8,SS_NOPREFIX
-    LTEXT           "Copyright © 2023, Benilda Key. All rights reserved.",IDC_COPYRIGHT_INFO_STATIC,42,26,246,8
+    LTEXT           "Copyright © 2026, Benilda Key. All rights reserved.",IDC_COPYRIGHT_INFO_STATIC,42,26,246,8
     LTEXT           "SnKOpen Analog Clock, based on the Clock program from the book Programming Windows by Charles Petzold.",IDC_DESCRIPTION_STATIC,10,42,278,18
     CONTROL         "Source: <a href=""https://github.com/BenKey/SnKOpen-Analog-Clock"">SnKOpen Analog Clock</a>",IDC_SOURCE_SYSLINK,"SysLink",WS_TABSTOP,10,67,280,8
     CONTROL         "License: <a href=""https://opensource.org/licenses/BSD-2-Clause"">The BSD 2-Clause License</a>",IDC_LICENSE_SYSLINK,"SysLink",WS_TABSTOP,10,84,280,8
