@@ -13,15 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\external">
+      <UniqueIdentifier>{fe448839-0771-4154-a015-6bf6e0c28f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\external">
+      <UniqueIdentifier>{8ea469ce-7960-4ffb-8f02-82d781858702}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external/source/SystemTray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external/source/Utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="About.cpp">
@@ -43,29 +43,26 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="external/source/DirectAnnotation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\external</Filter>
     </ClCompile>
     <ClCompile Include="external/source/OleAccGUIDs.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\external</Filter>
+    </ClCompile>
+    <ClCompile Include="external/source/SystemTray.cpp">
+      <Filter>Source Files\external</Filter>
     </ClCompile>
     <ClCompile Include="external/source/UIAutomationGUIDs.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\external</Filter>
+    </ClCompile>
+    <ClCompile Include="external/source/Utility.cpp">
+      <Filter>Source Files\external</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="external/include/SystemTray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external/include/Utility.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external/include-cross-platform/VersionInfoCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="About.h">
@@ -89,8 +86,20 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="external/include-cross-platform/VersionInfoCommon.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="external/include/Utility.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="external/include/SystemTray.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\stdafx.h">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
     <ClInclude Include="external/include/DirectAnnotation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\external</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -94,6 +94,7 @@
     <ClInclude Include="About.h" />
     <ClInclude Include="App.h" />
     <ClInclude Include="external/include/DirectAnnotation.h" />
+    <ClInclude Include="external\include\stdafx.h" />
     <ClInclude Include="Options.h" />
     <ClInclude Include="OptionsDialog.h" />
     <ClInclude Include="resource.h" />
