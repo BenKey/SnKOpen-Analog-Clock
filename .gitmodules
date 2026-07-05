@@ -10,3 +10,6 @@
 [submodule "external/include"]
 	path = external/include
 	url = https://github.com/BenKey/shared-Windows-API-header-files.git
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/BenKey/shared-CMake-build-files.git
