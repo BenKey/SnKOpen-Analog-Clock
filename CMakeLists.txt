@@ -4,7 +4,7 @@ if(DEFINED ENV{VCPKG_DEFAULT_TRIPLET} AND NOT VCPKG_TARGET_TRIPLET MATCHES "$ENV
   set(VCPKG_TARGET_TRIPLET "$ENV{VCPKG_DEFAULT_TRIPLET}" CACHE STRING "" FORCE)
 endif()
 
-project(Clock LANGUAGES C CXX)
+project(SnKOpen-Analog-Clock LANGUAGES C CXX)
 include(GNUInstallDirs)
 
 include("${CMAKE_SOURCE_DIR}/cmake/include/init_runtime_dependencies_directories.cmake")
@@ -14,6 +14,7 @@ include("${CMAKE_SOURCE_DIR}/cmake/include/boost.cmake")
 include("${CMAKE_SOURCE_DIR}/cmake/include/icu.cmake")
 
 include_directories("${CMAKE_SOURCE_DIR}")
+include_directories("${CMAKE_SOURCE_DIR}/build/include")
 include_directories("${CMAKE_SOURCE_DIR}/external/include")
 include_directories("${CMAKE_SOURCE_DIR}/external/include-cross-platform")
 
