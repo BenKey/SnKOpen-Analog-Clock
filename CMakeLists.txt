@@ -5,6 +5,10 @@ if(DEFINED ENV{VCPKG_DEFAULT_TRIPLET} AND NOT VCPKG_TARGET_TRIPLET MATCHES "$ENV
 endif()
 
 project(SnKOpen-Analog-Clock LANGUAGES C CXX)
+
+set(BOOST_REQUIRED TRUE CACHE BOOL "Whether Boost is required or not")
+set(ICU_REQUIRED TRUE CACHE BOOL "Whether ICU is required or not")
+
 include(GNUInstallDirs)
 
 include("${CMAKE_SOURCE_DIR}/cmake/include/init_runtime_dependencies_directories.cmake")
